@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="smokeTest"></include>
+</run>
+</groups>
+  <test thread-count="5" name="Test_smokeTest">
+    <classes>
+      <class name="Vtigerwithpomrepository.CreateContactwithpomlibTest"/>
+    </classes>
+  </test> <!-- Test_smokeTest -->
+</suite> <!-- Suite -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="BROWSER" value="firefox"/>
+  <test name="Testrunner-firefox(failed)" parallel="tests">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="Vtigerwithpomrepository.CreateOrgwithpomlibTest">
+        <methods>
+          <include name="createOrgwithIndusType"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="createOrg"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- Vtigerwithpomrepository.CreateOrgwithpomlibTest -->
+    </classes>
+  </test> <!-- Testrunner-firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
