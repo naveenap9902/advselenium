@@ -37,8 +37,7 @@ public class DataBaseUtilities
 		result=connection.createStatement().executeQuery(query);
 		return result;
 		}catch(SQLException e){
-			e.printStackTrace();
-			
+			e.printStackTrace();	
 		}
 		return result;
 	}

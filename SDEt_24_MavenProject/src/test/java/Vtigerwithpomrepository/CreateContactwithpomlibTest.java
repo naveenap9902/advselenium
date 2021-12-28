@@ -1,5 +1,6 @@
 package Vtigerwithpomrepository;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.comcast.generalUtility.BaseAnnotationClass;
@@ -8,10 +9,10 @@ import com.crm.comcast.objectRepositorylib.ContactsPage;
 import com.crm.comcast.objectRepositorylib.HomePage;
 import com.crm.comcast.objectRepositorylib.OrganizationPage;
 import com.crm.comcast.objectRepositorylib.Organizationinfo;
-
+@Listeners(com.crm.comcast.generalUtility.ListnerImp.class)
 public class CreateContactwithpomlibTest  extends BaseAnnotationClass
 {
-	@Test(groups="smokeTest")
+	@Test
 	public void createContact() throws Throwable
 	{	
 			int ranNum = jav.getRanDomNumber();
@@ -33,7 +34,7 @@ public class CreateContactwithpomlibTest  extends BaseAnnotationClass
 			}
 		
 	}
-	@Test(groups="smokeTest")
+	@Test
 	public void CreatecontactwithOrgTest() throws Throwable
 	{	
 			int ranNum = jav.getRanDomNumber();

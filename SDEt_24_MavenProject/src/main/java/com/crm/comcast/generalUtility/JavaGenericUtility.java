@@ -17,7 +17,6 @@ public class JavaGenericUtility
 		int ranDomNum = ranDom.nextInt(10000);
 		return ranDomNum;
 	}
-	
 	/**
 	 * its used to get the current System date with Time
 	 * @return
@@ -36,14 +35,13 @@ public class JavaGenericUtility
 		String systemDateAndTime = date.toString();
 		System.out.println(systemDateAndTime);
 		String[] arr = systemDateAndTime.split(" ");
-        String DD = arr[2];
+        String DD = arr[2];    
         String YYYY = arr[5];   
-        int MM = date.getMonth()+1;
-        
+        int date1 = date.getDate();      
+        int MM = date.getMonth()+1;        
         String finalFromat = YYYY+"-"+MM+"-"+DD;
 		return finalFromat;	  
 	}
-	
     /**
      * used to pass the keyboard functionalities(Virtual Keys)
      * @throws Throwable
@@ -55,5 +53,9 @@ public class JavaGenericUtility
     	rc.keyRelease(KeyEvent.VK_ENTER);
     }
 
+    public static void main(String[] args) {
+		JavaGenericUtility jav=new JavaGenericUtility();
+		jav.getSystmeDate_YYYY_MM__DD();
+	}
 
 }

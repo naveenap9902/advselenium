@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 
 import com.crm.comcast.generalUtility.ExcelFileUtility2;
 import com.crm.comcast.generalUtility.PropertiesFileUtility;
+import com.crm.comcast.objectRepositorylib.LoginPage;
 
 public class CreateContactTest 
 {
@@ -57,9 +58,8 @@ public class CreateContactTest
 			Thread.sleep(5000);
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get(URL);
-			driver.findElement(By.name("user_name")).sendKeys(USERNAME);
-			driver.findElement(By.name("user_password")).sendKeys(PASSWORD);
-			driver.findElement(By.id("submitButton")).click();
+			LoginPage lp=new LoginPage(driver);
+			lp.loginToApp();
 			driver.findElement(By.xpath("(//a[.='Organizations'])[1]")).click();
 			driver.findElement(By.xpath("//img[@title='Create Organization...']")).click();
 			driver.findElement(By.xpath("//input[@name='accountname']")).sendKeys(OrgName);

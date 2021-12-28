@@ -2,33 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-14T23:47:33 IST" name="Default suite" finished-at="2021-11-14T23:49:00 IST" duration-ms="86277">
+  <suite started-at="2021-12-12T22:00:58 IST" name="Default suite" finished-at="2021-12-12T22:00:58 IST" duration-ms="147">
     <groups>
     </groups>
-    <test started-at="2021-11-14T23:47:33 IST" name="Default test" finished-at="2021-11-14T23:49:00 IST" duration-ms="86277">
-      <class name="db_practice.ListnerpracticeTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:db_practice.ListnerpracticeTest@5a45133e]" started-at="2021-11-14T23:47:31 IST" name="configBS" finished-at="2021-11-14T23:47:33 IST" duration-ms="2735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:db_practice.ListnerpracticeTest@5a45133e]" started-at="2021-11-14T23:47:33 IST" name="configBC" finished-at="2021-11-14T23:48:00 IST" duration-ms="27162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:db_practice.ListnerpracticeTest@5a45133e]" started-at="2021-11-14T23:48:00 IST" name="configBM" finished-at="2021-11-14T23:48:36 IST" duration-ms="35855" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="listnerPractice()[pri:0, instance:db_practice.ListnerpracticeTest@5a45133e]" started-at="2021-11-14T23:48:36 IST" name="listnerPractice" finished-at="2021-11-14T23:48:36 IST" duration-ms="60" status="FAIL">
+    <test started-at="2021-12-12T22:00:58 IST" name="Default test" finished-at="2021-12-12T22:00:58 IST" duration-ms="147">
+      <class name="db_practice.AssertionPractice">
+        <test-method signature="demoTest()[pri:0, instance:db_practice.AssertionPractice@57cf54e1]" started-at="2021-12-12T22:00:58 IST" name="demoTest" finished-at="2021-12-12T22:00:58 IST" duration-ms="23" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at db_practice.ListnerpracticeTest.listnerPractice(ListnerpracticeTest.java:15)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at db_practice.AssertionPractice.demoTest(AssertionPractice.java:14)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,20 +52,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- listnerPractice -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:db_practice.ListnerpracticeTest@5a45133e]" started-at="2021-11-14T23:48:40 IST" name="configAM" finished-at="2021-11-14T23:48:58 IST" duration-ms="17759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:db_practice.ListnerpracticeTest@5a45133e]" started-at="2021-11-14T23:48:58 IST" name="configAC" finished-at="2021-11-14T23:49:00 IST" duration-ms="1416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:db_practice.ListnerpracticeTest@5a45133e]" started-at="2021-11-14T23:49:00 IST" name="configAS" finished-at="2021-11-14T23:49:00 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAS -->
-      </class> <!-- db_practice.ListnerpracticeTest -->
+        </test-method> <!-- demoTest -->
+      </class> <!-- db_practice.AssertionPractice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -29,24 +29,8 @@ public class ClearTripBookCurrentDateTest
 		//convert sysdate into depDate format
 		String depDate=day+" "+month+" "+actDate+" "+year;
 		//open the empty browser
-		WebDriver driver=new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriver driver=new ChromeDriver();
 		
-		//open cleartrip application
-		driver.get("https://www.cleartrip.com/");
-		//navigate to src field
-		driver.findElement(By.xpath("//h4[.='From']/..//input")).sendKeys("BOM");
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//p[.='Mumbai, IN - Chatrapati Shivaji Airport (BOM)']")).click();
-		//navigate to to field
-		driver.findElement(By.xpath("//h4[.='To']/..//input")).sendKeys("MAA");
-		Thread.sleep(20000);
-		driver.findElement(By.xpath("//p[.='Chennai, IN - Chennai Airport (MAA)']")).click();
-		//navigate to departs on date
-		driver.findElement(By.xpath("//h4[.='Depart on']/../../following-sibling::div//button")).click();
-		//select the current system date
-		driver.findElement(By.xpath("//div[@aria-label='"+depDate+"']")).click();
-		System.out.println("flight booked");		
 	}
 
 }

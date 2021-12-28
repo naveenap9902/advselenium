@@ -20,6 +20,8 @@ import com.crm.comcast.objectRepositorylib.LoginPage;
 import com.mysql.cj.jdbc.Driver;
 import com.mysql.cj.protocol.Resultset;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseAnnotationClass 
 {
 	public PropertiesFileUtility plib=new PropertiesFileUtility();
@@ -41,7 +43,9 @@ public class BaseAnnotationClass
 	public void configBC() throws Throwable
 	{
 		System.out.println("===launch the browser===");
-		String BROWSER=plib.getPropertyKeyValue("browser");
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
+	/*	String BROWSER=plib.getPropertyKeyValue("browser");
 		
 		if(BROWSER.equals("chrome"))
 		{
@@ -53,7 +57,7 @@ public class BaseAnnotationClass
 		}
 		else if (BROWSER.equals("iebrowser")) {
 			driver=new InternetExplorerDriver();		
-		}	
+		}*/	
 	}
 	@BeforeMethod(groups="smokeTest")
 	public void configBM() throws Throwable

@@ -90,7 +90,6 @@ public class WebDriverGenericUtility
 		   Select select=new Select(element);
 		   select.selectByIndex(index);   
 	   }
-	   
 	   /**
 	    * This method will perform mouse over action
 	    * @param driver
@@ -101,7 +100,6 @@ public class WebDriverGenericUtility
 	   {
 		   Actions act = new Actions(driver);
 		   act.moveToElement(element).perform();
-		   
 	   }
 	   
 	   /**
@@ -132,9 +130,7 @@ public class WebDriverGenericUtility
 	           {
 	        	   break;
 	           }
-			   
-		   }
-		   
+		   }	   
 	   }
 	   /**
 	    * Accept alert(to handle alert popup) 
@@ -162,7 +158,7 @@ public class WebDriverGenericUtility
 	   public void scrollToWebElement(WebDriver driver, WebElement element) {
 		   JavascriptExecutor js=(JavascriptExecutor)driver;
 		  int y= element.getLocation().getY();
-		   js.executeScript("window.scrollBy(0,"+y+")", element);
+		   js.executeScript("window.scrollBy(0,"+y+")");
 	   }
 	   /**
 	    * it is used to switch frame based on index
