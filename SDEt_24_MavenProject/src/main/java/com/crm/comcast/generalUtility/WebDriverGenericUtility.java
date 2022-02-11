@@ -51,7 +51,6 @@ public class WebDriverGenericUtility
 	    * @throws throwable
 	    * here we specify Thread.sleep 
 	    */
-	   
 	   public void waitAndClick(WebElement element) throws InterruptedException
 	   {
 		   int count = 0;
@@ -63,8 +62,7 @@ public class WebDriverGenericUtility
 		    		   Thread.sleep(1000);
 		    		   count++;
 		    	   }
-	       }
-	       
+	       }    
 	   }
 	   /**
 	    * this method is used to handle dropdowns
@@ -75,16 +73,13 @@ public class WebDriverGenericUtility
 	   public void select(WebElement element, String option)
 	   {
 		   Select select=new Select(element);
-		   select.selectByVisibleText(option);
-		   
-	   }
-	   
+		   select.selectByVisibleText(option);	   
+	   }   
 	   /**
 	    * this methods enables user to handle dropdown using index
 	    * @param element
 	    * @param index
-	    */
-	      
+	    */   
 	   public void select(WebElement element, int index)
 	   {
 		   Select select=new Select(element);
